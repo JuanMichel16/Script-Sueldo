@@ -1,8 +1,8 @@
 function sueldoTrabajador() {
-  let sueldo = 1501;
+  let sueldo = 0;
   let porcentaje;
 
-  if (sueldo >= 0 && sueldo <= 1000) {
+  if (sueldo > 0 && sueldo <= 1000) {
     porcentaje = 0.15;
     sueldo = sueldo + (sueldo * porcentaje);
 
@@ -28,7 +28,7 @@ function sueldoTrabajador() {
 
     return sueldo;
   } else {
-    console.log('Error! Sueldo no valido');
+    console.log('Error! El sueldo debe ser mayor a 0');
 
     return;
   }
